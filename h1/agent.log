@@ -1,0 +1,485 @@
+agent.py | 2026-05-26 09:53:28 AM | Start | Pornire aplicatie QAAgent
+agent.py | 2026-05-26 09:53:28 AM | Pas 1 | Initializare agent QA
+agent.py | 2026-05-26 09:53:29 AM | Pas 1.1 | LLM initializat: gemini-2.5-flash
+agent.py | 2026-05-26 09:58:47 AM | Start | Pornire aplicatie QAAgent
+agent.py | 2026-05-26 09:58:47 AM | Pas 1 | Initializare agent QA
+agent.py | 2026-05-26 09:58:48 AM | Pas 1.1 | LLM initializat: gemini-2.5-flash
+agent.py | 2026-05-26 09:58:48 AM | Pas 1.2 | PromptRegistry incarcat: ['analyst', 'extract', 'planner', 'summary']
+agent.py | 2026-05-26 09:58:48 AM | Pas 1.3 | Tools inregistrate: ['calculator', 'get_datetime', 'web_search']
+agent.py | 2026-05-26 09:58:48 AM | Pas 1 | Agent initializat cu succes
+agent.py | 2026-05-26 09:59:02 AM | Pas 2 | Mesaj primit: 'salut'
+agent.py | 2026-05-26 09:59:02 AM | Pas 2.1 | Context construit: 2 mesaje
+agent.py | 2026-05-26 09:59:02 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 09:59:03 AM | Pas 4 | Raspuns final generat (33 caractere)
+agent.py | 2026-05-26 09:59:03 AM | Pas 4.1 | Istoric actualizat: 2 mesaje total
+agent.py | 2026-05-26 10:07:16 AM | Pas 2 | Mesaj primit: 'Cat face 1847 * 394?'
+agent.py | 2026-05-26 10:07:16 AM | Pas 2.1 | Context construit: 4 mesaje
+agent.py | 2026-05-26 10:07:16 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:07:17 AM | Think | LLM solicita 1 tool call(s)
+agent.py | 2026-05-26 10:07:17 AM | Act | Execut tool: calculator({'expression': '1847 * 394'})
+agent.py | 2026-05-26 10:07:17 AM | Observe | Rezultat calculator: 727718
+agent.py | 2026-05-26 10:07:17 AM | Pas 3 | ReAct iteratie 2/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:07:17 AM | Pas 4 | Raspuns final generat (6 caractere)
+agent.py | 2026-05-26 10:07:17 AM | Pas 4.1 | Istoric actualizat: 4 mesaje total
+agent.py | 2026-05-26 10:08:08 AM | Pas 2 | Mesaj primit: 'Calculeaza (150 + 75) * 3 - 12 / 4'
+agent.py | 2026-05-26 10:08:08 AM | Pas 2.1 | Context construit: 6 mesaje
+agent.py | 2026-05-26 10:08:08 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:08:09 AM | Think | LLM solicita 1 tool call(s)
+agent.py | 2026-05-26 10:08:09 AM | Act | Execut tool: calculator({'expression': '(150 + 75) * 3 - 12 / 4'})
+agent.py | 2026-05-26 10:08:09 AM | Observe | Rezultat calculator: 672.0
+agent.py | 2026-05-26 10:08:09 AM | Pas 3 | ReAct iteratie 2/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:08:10 AM | Pas 4 | Raspuns final generat (258 caractere)
+agent.py | 2026-05-26 10:08:10 AM | Pas 4.1 | Istoric actualizat: 6 mesaje total
+agent.py | 2026-05-26 10:08:18 AM | Pas 2 | Mesaj primit: 'Care e radacina patrata din 144?'
+agent.py | 2026-05-26 10:08:18 AM | Pas 2.1 | Context construit: 8 mesaje
+agent.py | 2026-05-26 10:08:18 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:08:19 AM | Think | LLM solicita 1 tool call(s)
+agent.py | 2026-05-26 10:08:19 AM | Act | Execut tool: calculator({'expression': '144 ** 0.5'})
+agent.py | 2026-05-26 10:08:19 AM | Observe | Rezultat calculator: 12.0
+agent.py | 2026-05-26 10:08:19 AM | Pas 3 | ReAct iteratie 2/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:08:20 AM | Pas 4 | Raspuns final generat (33 caractere)
+agent.py | 2026-05-26 10:08:20 AM | Pas 4.1 | Istoric actualizat: 8 mesaje total
+agent.py | 2026-05-26 10:08:30 AM | Pas 2 | Mesaj primit: 'Ce ora este acum?'
+agent.py | 2026-05-26 10:08:30 AM | Pas 2.1 | Context construit: 10 mesaje
+agent.py | 2026-05-26 10:08:30 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:08:31 AM | Think | LLM solicita 1 tool call(s)
+agent.py | 2026-05-26 10:08:31 AM | Act | Execut tool: get_datetime({})
+agent.py | 2026-05-26 10:08:31 AM | Observe | Rezultat get_datetime: 2026-05-26 10:08:31
+agent.py | 2026-05-26 10:08:31 AM | Pas 3 | ReAct iteratie 2/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:08:32 AM | Pas 4 | Raspuns final generat (237 caractere)
+agent.py | 2026-05-26 10:08:32 AM | Pas 4.1 | Istoric actualizat: 10 mesaje total
+agent.py | 2026-05-26 10:08:50 AM | Pas 2 | Mesaj primit: 'Da-mi data de azi in format DD/MM/YYYY'
+agent.py | 2026-05-26 10:08:50 AM | Pas 2.1 | Context construit: 12 mesaje
+agent.py | 2026-05-26 10:08:50 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:08:51 AM | Think | LLM solicita 1 tool call(s)
+agent.py | 2026-05-26 10:08:51 AM | Act | Execut tool: get_datetime({'format': '%d/%m/%Y'})
+agent.py | 2026-05-26 10:08:51 AM | Observe | Rezultat get_datetime: 26/05/2026
+agent.py | 2026-05-26 10:08:51 AM | Pas 3 | ReAct iteratie 2/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:08:52 AM | Pas 4 | Raspuns final generat (225 caractere)
+agent.py | 2026-05-26 10:08:52 AM | Pas 4.1 | Istoric actualizat: 12 mesaje total
+agent.py | 2026-05-26 10:09:01 AM | Pas 2 | Mesaj primit: 'In ce zi a saptamanii suntem?'
+agent.py | 2026-05-26 10:09:01 AM | Pas 2.1 | Context construit: 14 mesaje
+agent.py | 2026-05-26 10:09:01 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+Retrying google.genai._api_client.BaseApiClient._request_once in 1.4770193730578955 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 58.639106956s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '58s'}]}}.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:09:03 AM | Think | LLM solicita 1 tool call(s)
+agent.py | 2026-05-26 10:09:03 AM | Act | Execut tool: get_datetime({'format': '%A'})
+agent.py | 2026-05-26 10:09:03 AM | Observe | Rezultat get_datetime: Tuesday
+agent.py | 2026-05-26 10:09:03 AM | Pas 3 | ReAct iteratie 2/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+Retrying google.genai._api_client.BaseApiClient._request_once in 1.2391556868015345 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 56.282860424s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '56s'}]}}.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+Retrying google.genai._api_client.BaseApiClient._request_once in 2.87126536424091 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 54.930838694s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '54s'}]}}.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+Retrying google.genai._api_client.BaseApiClient._request_once in 4.761566714300242 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 51.929378023s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '51s'}]}}.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+Retrying google.genai._api_client.BaseApiClient._request_once in 8.91074925489842 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 47.04663309s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '47s'}]}}.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:09:22 AM | Pas 4 | Raspuns final generat (202 caractere)
+agent.py | 2026-05-26 10:09:22 AM | Pas 4.1 | Istoric actualizat: 14 mesaje total
+agent.py | 2026-05-26 10:18:34 AM | Start | Pornire aplicatie QAAgent
+agent.py | 2026-05-26 10:18:34 AM | Pas 1 | Initializare agent QA
+agent.py | 2026-05-26 10:18:35 AM | Pas 1.1 | LLM primar initializat: gemini-2.5-flash
+agent.py | 2026-05-26 10:18:43 AM | Pas 1.1 | LLM fallback initializat: gpt-4o-mini
+agent.py | 2026-05-26 10:18:43 AM | Pas 1.2 | PromptRegistry incarcat: ['analyst', 'extract', 'planner', 'summary']
+agent.py | 2026-05-26 10:18:43 AM | Pas 1.3 | Tools inregistrate: ['calculator', 'get_datetime', 'web_search']
+agent.py | 2026-05-26 10:18:43 AM | Pas 1 | Agent initializat cu succes
+agent.py | 2026-05-26 10:19:10 AM | Pas 2 | Mesaj primit: 'salut'
+agent.py | 2026-05-26 10:19:10 AM | Pas 2.1 | Context construit: 2 mesaje
+agent.py | 2026-05-26 10:19:10 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:19:11 AM | Pas 3 | Provider: gemini-2.5-flash
+agent.py | 2026-05-26 10:19:11 AM | Pas 4 | Raspuns final generat (26 caractere)
+agent.py | 2026-05-26 10:19:11 AM | Pas 4.1 | Istoric actualizat: 2 mesaje total
+agent.py | 2026-05-26 10:19:22 AM | Pas 2 | Mesaj primit: 'Cat face 1847 * 394?'
+agent.py | 2026-05-26 10:19:22 AM | Pas 2.1 | Context construit: 4 mesaje
+agent.py | 2026-05-26 10:19:22 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:19:23 AM | Pas 3 | Provider: gemini-2.5-flash
+agent.py | 2026-05-26 10:19:23 AM | Think | LLM solicita 1 tool call(s)
+agent.py | 2026-05-26 10:19:23 AM | Act | Execut tool: calculator({'expression': '1847 * 394'})
+agent.py | 2026-05-26 10:19:23 AM | Observe | Rezultat calculator: 727718
+agent.py | 2026-05-26 10:19:23 AM | Pas 3 | ReAct iteratie 2/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:19:23 AM | Pas 3 | Provider: gemini-2.5-flash
+agent.py | 2026-05-26 10:19:23 AM | Pas 4 | Raspuns final generat (6 caractere)
+agent.py | 2026-05-26 10:19:23 AM | Pas 4.1 | Istoric actualizat: 4 mesaje total
+agent.py | 2026-05-26 10:19:26 AM | Pas 2 | Mesaj primit: 'Calculeaza (150 + 75) * 3 - 12 / 4'
+agent.py | 2026-05-26 10:19:26 AM | Pas 2.1 | Context construit: 6 mesaje
+agent.py | 2026-05-26 10:19:26 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:19:27 AM | Pas 3 | Provider: gemini-2.5-flash
+agent.py | 2026-05-26 10:19:27 AM | Think | LLM solicita 1 tool call(s)
+agent.py | 2026-05-26 10:19:27 AM | Act | Execut tool: calculator({'expression': '(150 + 75) * 3 - 12 / 4'})
+agent.py | 2026-05-26 10:19:27 AM | Observe | Rezultat calculator: 672.0
+agent.py | 2026-05-26 10:19:27 AM | Pas 3 | ReAct iteratie 2/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:19:28 AM | Pas 3 | Provider: gemini-2.5-flash
+agent.py | 2026-05-26 10:19:28 AM | Pas 4 | Raspuns final generat (57 caractere)
+agent.py | 2026-05-26 10:19:28 AM | Pas 4.1 | Istoric actualizat: 6 mesaje total
+agent.py | 2026-05-26 10:19:29 AM | Pas 2 | Mesaj primit: 'Care e radacina patrata din 144?'
+agent.py | 2026-05-26 10:19:29 AM | Pas 2.1 | Context construit: 8 mesaje
+agent.py | 2026-05-26 10:19:29 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:19:31 AM | Pas 3 | Provider: gemini-2.5-flash
+agent.py | 2026-05-26 10:19:31 AM | Think | LLM solicita 1 tool call(s)
+agent.py | 2026-05-26 10:19:31 AM | Act | Execut tool: calculator({'expression': 'sqrt(144)'})
+agent.py | 2026-05-26 10:19:31 AM | Observe | Rezultat calculator: Eroare la calcul: name 'sqrt' is not defined
+agent.py | 2026-05-26 10:19:31 AM | Pas 3 | ReAct iteratie 2/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:19:33 AM | Pas 3 | Provider: gemini-2.5-flash
+agent.py | 2026-05-26 10:19:33 AM | Think | LLM solicita 1 tool call(s)
+agent.py | 2026-05-26 10:19:33 AM | Act | Execut tool: calculator({'expression': '144 ^ 0.5'})
+agent.py | 2026-05-26 10:19:33 AM | Observe | Rezultat calculator: Eroare la calcul: unsupported operand type(s) for ^: 'int' and 'float'
+agent.py | 2026-05-26 10:19:33 AM | Pas 3 | ReAct iteratie 3/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+Retrying google.genai._api_client.BaseApiClient._request_once in 1.1065868636143334 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 27.018909527s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '27s'}]}}.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+Retrying google.genai._api_client.BaseApiClient._request_once in 2.5232767160848115 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 25.78703974s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '25s'}]}}.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+Retrying google.genai._api_client.BaseApiClient._request_once in 4.602404195941088 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 23.148816555s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '23s'}]}}.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+Retrying google.genai._api_client.BaseApiClient._request_once in 8.905665603906618 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 18.3982526s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+Retrying google.genai._api_client.BaseApiClient._request_once in 16.159154618817958 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 9.301538115s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '9s'}]}}.
+agent.py | 2026-05-26 10:22:24 AM | Start | Pornire aplicatie QAAgent
+agent.py | 2026-05-26 10:22:24 AM | Pas 1 | Initializare agent QA
+agent.py | 2026-05-26 10:22:25 AM | Pas 1.1 | LLM primar initializat: gemini-2.5-flash
+agent.py | 2026-05-26 10:22:26 AM | Pas 1.1 | LLM fallback initializat: gpt-4o-mini
+agent.py | 2026-05-26 10:22:26 AM | Pas 1.2 | PromptRegistry incarcat: ['analyst', 'extract', 'planner', 'summary']
+agent.py | 2026-05-26 10:22:26 AM | Pas 1.3 | Tools inregistrate: ['calculator', 'get_datetime', 'web_search']
+agent.py | 2026-05-26 10:22:26 AM | Pas 1 | Agent initializat cu succes
+agent.py | 2026-05-26 10:22:29 AM | Pas 2 | Mesaj primit: 'sal'
+agent.py | 2026-05-26 10:22:29 AM | Pas 2.1 | Context construit: 2 mesaje
+agent.py | 2026-05-26 10:22:29 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+agent.py | 2026-05-26 10:22:30 AM | Fallback | Gemini 429 -> comutare punctuala pe gpt-4o-mini
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:22:32 AM | Fallback | Raspuns primit de la gpt-4o-mini -> revin la Gemini la urmatoarea intrebare
+agent.py | 2026-05-26 10:22:32 AM | Pas 4 | Raspuns final generat (30 caractere)
+agent.py | 2026-05-26 10:22:32 AM | Pas 4.1 | Istoric actualizat: 2 mesaje total
+agent.py | 2026-05-26 10:23:35 AM | Pas 2 | Mesaj primit: 'salut'
+agent.py | 2026-05-26 10:23:35 AM | Pas 2.1 | Context construit: 4 mesaje
+agent.py | 2026-05-26 10:23:35 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+agent.py | 2026-05-26 10:23:35 AM | Fallback | Gemini 429 -> comutare punctuala pe gpt-4o-mini
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:23:37 AM | Fallback | Raspuns primit de la gpt-4o-mini -> revin la Gemini la urmatoarea intrebare
+agent.py | 2026-05-26 10:23:37 AM | Pas 4 | Raspuns final generat (33 caractere)
+agent.py | 2026-05-26 10:23:37 AM | Pas 4.1 | Istoric actualizat: 4 mesaje total
+agent.py | 2026-05-26 10:24:11 AM | Pas 2 | Mesaj primit: 'hello!'
+agent.py | 2026-05-26 10:24:11 AM | Pas 2.1 | Context construit: 6 mesaje
+agent.py | 2026-05-26 10:24:11 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+agent.py | 2026-05-26 10:24:11 AM | Fallback | Gemini 429 -> comutare punctuala pe gpt-4o-mini
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:24:13 AM | Fallback | Raspuns primit de la gpt-4o-mini -> revin la Gemini la urmatoarea intrebare
+agent.py | 2026-05-26 10:24:13 AM | Pas 4 | Raspuns final generat (34 caractere)
+agent.py | 2026-05-26 10:24:13 AM | Pas 4.1 | Istoric actualizat: 6 mesaje total
+agent.py | 2026-05-26 10:38:08 AM | Start | Pornire aplicatie QAAgent
+agent.py | 2026-05-26 10:38:08 AM | Pas 1 | Initializare agent QA
+agent.py | 2026-05-26 10:38:10 AM | Pas 1.1 | Provider inregistrat: gemini-2.5-flash
+agent.py | 2026-05-26 10:38:10 AM | Pas 1.1 | Provider inregistrat: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:38:10 AM | Pas 1.1 | Provider inregistrat: openai/gpt-4o-mini
+agent.py | 2026-05-26 10:38:10 AM | Pas 1.1 | Provider activ la start: gemini-2.5-flash
+agent.py | 2026-05-26 10:38:10 AM | Pas 1.2 | PromptRegistry incarcat: ['analyst', 'extract', 'planner', 'summary']
+agent.py | 2026-05-26 10:38:10 AM | Pas 1.3 | Tools inregistrate: ['calculator', 'get_datetime', 'web_search']
+agent.py | 2026-05-26 10:38:10 AM | Pas 1 | Agent initializat cu succes
+agent.py | 2026-05-26 10:38:15 AM | Pas 2 | Mesaj primit: 'salut'
+agent.py | 2026-05-26 10:38:15 AM | Pas 2.1 | Context construit: 2 mesaje
+agent.py | 2026-05-26 10:38:15 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+agent.py | 2026-05-26 10:38:15 AM | Comutare | gemini-2.5-flash -> groq/llama-3.1-8b-instant (permanent pe sesiune)
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:38:15 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:38:15 AM | Pas 4 | Raspuns final generat (110 caractere)
+agent.py | 2026-05-26 10:38:15 AM | Pas 4.1 | Istoric actualizat: 2 mesaje total
+agent.py | 2026-05-26 10:38:37 AM | Pas 2 | Mesaj primit: 'Cat face 1847 * 394?'
+agent.py | 2026-05-26 10:38:37 AM | Pas 2.1 | Context construit: 4 mesaje
+agent.py | 2026-05-26 10:38:37 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:38:37 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:38:37 AM | Think | LLM solicita 1 tool call(s)
+agent.py | 2026-05-26 10:38:37 AM | Act | Execut tool: calculator({'expression': '1847 * 394'})
+agent.py | 2026-05-26 10:38:37 AM | Observe | Rezultat calculator: 727718
+agent.py | 2026-05-26 10:38:37 AM | Pas 3 | ReAct iteratie 2/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:38:37 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:38:37 AM | Pas 4 | Raspuns final generat (34 caractere)
+agent.py | 2026-05-26 10:38:37 AM | Pas 4.1 | Istoric actualizat: 4 mesaje total
+agent.py | 2026-05-26 10:38:44 AM | Pas 2 | Mesaj primit: 'Calculeaza (150 + 75) * 3 - 12 / 4'
+agent.py | 2026-05-26 10:38:44 AM | Pas 2.1 | Context construit: 6 mesaje
+agent.py | 2026-05-26 10:38:44 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:38:44 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:38:44 AM | Think | LLM solicita 1 tool call(s)
+agent.py | 2026-05-26 10:38:44 AM | Act | Execut tool: calculator({'expression': '(150 + 75) * 3 - 12 / 4'})
+agent.py | 2026-05-26 10:38:44 AM | Observe | Rezultat calculator: 672.0
+agent.py | 2026-05-26 10:38:44 AM | Pas 3 | ReAct iteratie 2/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:38:44 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:38:44 AM | Pas 4 | Raspuns final generat (31 caractere)
+agent.py | 2026-05-26 10:38:44 AM | Pas 4.1 | Istoric actualizat: 6 mesaje total
+agent.py | 2026-05-26 10:38:48 AM | Pas 2 | Mesaj primit: 'Care e radacina patrata din 144?'
+agent.py | 2026-05-26 10:38:48 AM | Pas 2.1 | Context construit: 8 mesaje
+agent.py | 2026-05-26 10:38:48 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:38:48 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:38:48 AM | Think | LLM solicita 1 tool call(s)
+agent.py | 2026-05-26 10:38:48 AM | Act | Execut tool: calculator({'expression': '144 ^ (1/2)'})
+agent.py | 2026-05-26 10:38:48 AM | Observe | Rezultat calculator: Eroare la calcul: unsupported operand type(s) for ^: 'int' and 'float'
+agent.py | 2026-05-26 10:38:48 AM | Pas 3 | ReAct iteratie 2/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:38:48 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:38:48 AM | Think | LLM solicita 1 tool call(s)
+agent.py | 2026-05-26 10:38:48 AM | Act | Execut tool: calculator({'expression': '144 ** 0.5'})
+agent.py | 2026-05-26 10:38:48 AM | Observe | Rezultat calculator: 12.0
+agent.py | 2026-05-26 10:38:48 AM | Pas 3 | ReAct iteratie 3/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:38:48 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:38:48 AM | Pas 4 | Raspuns final generat (35 caractere)
+agent.py | 2026-05-26 10:38:48 AM | Pas 4.1 | Istoric actualizat: 8 mesaje total
+agent.py | 2026-05-26 10:38:51 AM | Pas 2 | Mesaj primit: 'Ce ora este acum?'
+agent.py | 2026-05-26 10:38:52 AM | Pas 2.1 | Context construit: 10 mesaje
+agent.py | 2026-05-26 10:38:52 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:38:52 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:38:52 AM | Think | LLM solicita 1 tool call(s)
+agent.py | 2026-05-26 10:38:52 AM | Act | Execut tool: get_datetime({})
+agent.py | 2026-05-26 10:38:52 AM | Observe | Rezultat get_datetime: 2026-05-26 10:38:52
+agent.py | 2026-05-26 10:38:52 AM | Pas 3 | ReAct iteratie 2/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:38:52 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:38:52 AM | Pas 4 | Raspuns final generat (26 caractere)
+agent.py | 2026-05-26 10:38:52 AM | Pas 4.1 | Istoric actualizat: 10 mesaje total
+agent.py | 2026-05-26 10:38:55 AM | Pas 2 | Mesaj primit: 'Da-mi data de azi in format DD/MM/YYYY'
+agent.py | 2026-05-26 10:38:55 AM | Pas 2.1 | Context construit: 12 mesaje
+agent.py | 2026-05-26 10:38:55 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:38:56 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:38:56 AM | Think | LLM solicita 1 tool call(s)
+agent.py | 2026-05-26 10:38:56 AM | Act | Execut tool: get_datetime({'format': '%d/%m/%Y'})
+agent.py | 2026-05-26 10:38:56 AM | Observe | Rezultat get_datetime: 26/05/2026
+agent.py | 2026-05-26 10:38:56 AM | Pas 3 | ReAct iteratie 2/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+agent.py | 2026-05-26 10:38:56 AM | Comutare | groq/llama-3.1-8b-instant -> openai/gpt-4o-mini (permanent pe sesiune)
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+agent.py | 2026-05-26 10:38:57 AM | Eroare | Provider openai/gpt-4o-mini a esuat: Error code: 400 - {'error': {'message': "An assistant message with 'tool_calls' must be followed by 
+agent.py | 2026-05-26 10:46:51 AM | Start | Pornire aplicatie QAAgent
+agent.py | 2026-05-26 10:46:51 AM | Pas 1 | Initializare agent QA
+agent.py | 2026-05-26 10:46:53 AM | Pas 1.1 | Provider inregistrat: gemini-2.5-flash
+agent.py | 2026-05-26 10:46:53 AM | Pas 1.1 | Provider inregistrat: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:46:53 AM | Pas 1.1 | Provider inregistrat: openai/gpt-4o-mini
+agent.py | 2026-05-26 10:46:53 AM | Pas 1.1 | Provider activ la start: gemini-2.5-flash
+agent.py | 2026-05-26 10:46:53 AM | Pas 1.2 | PromptRegistry incarcat: ['analyst', 'extract', 'planner', 'summary']
+agent.py | 2026-05-26 10:46:53 AM | Pas 1.3 | Tools inregistrate: ['calculator', 'get_datetime', 'web_search']
+agent.py | 2026-05-26 10:46:53 AM | Pas 1 | Agent initializat cu succes
+agent.py | 2026-05-26 10:46:57 AM | Pas 2 | Mesaj primit: 'ola'
+agent.py | 2026-05-26 10:46:57 AM | Pas 2.1 | Context construit: 2 mesaje
+agent.py | 2026-05-26 10:46:57 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+agent.py | 2026-05-26 10:46:58 AM | Comutare | gemini-2.5-flash -> groq/llama-3.1-8b-instant (permanent pe sesiune)
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:46:58 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:46:58 AM | Pas 4 | Raspuns final generat (68 caractere)
+agent.py | 2026-05-26 10:46:58 AM | Pas 4.1 | Istoric actualizat: 2 mesaje total
+agent.py | 2026-05-26 10:47:07 AM | Pas 2 | Mesaj primit: 'ce faci?'
+agent.py | 2026-05-26 10:47:07 AM | Pas 2.1 | Context construit: 4 mesaje
+agent.py | 2026-05-26 10:47:07 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:47:08 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:47:08 AM | Pas 4 | Raspuns final generat (249 caractere)
+agent.py | 2026-05-26 10:47:08 AM | Pas 4.1 | Istoric actualizat: 4 mesaje total
+agent.py | 2026-05-26 10:47:16 AM | Pas 2 | Mesaj primit: 'ce model esti?'
+agent.py | 2026-05-26 10:47:16 AM | Pas 2.1 | Context construit: 6 mesaje
+agent.py | 2026-05-26 10:47:16 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:47:16 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:47:16 AM | Pas 4 | Raspuns final generat (289 caractere)
+agent.py | 2026-05-26 10:47:16 AM | Pas 4.1 | Istoric actualizat: 6 mesaje total
+agent.py | 2026-05-26 10:47:27 AM | Pas 2 | Mesaj primit: 'cine e furnizorul tau?'
+agent.py | 2026-05-26 10:47:27 AM | Pas 2.1 | Context construit: 8 mesaje
+agent.py | 2026-05-26 10:47:27 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:47:28 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:47:28 AM | Pas 4 | Raspuns final generat (388 caractere)
+agent.py | 2026-05-26 10:47:28 AM | Pas 4.1 | Istoric actualizat: 8 mesaje total
+agent.py | 2026-05-26 10:47:35 AM | Pas 2 | Mesaj primit: 'cum se numeste?'
+agent.py | 2026-05-26 10:47:35 AM | Pas 2.1 | Context construit: 10 mesaje
+agent.py | 2026-05-26 10:47:35 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:47:36 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:47:36 AM | Pas 4 | Raspuns final generat (286 caractere)
+agent.py | 2026-05-26 10:47:36 AM | Pas 4.1 | Istoric actualizat: 10 mesaje total
+agent.py | 2026-05-26 10:47:54 AM | Pas 2 | Mesaj primit: 'In ce zi a saptamanii suntem?'
+agent.py | 2026-05-26 10:47:54 AM | Pas 2.1 | Context construit: 12 mesaje
+agent.py | 2026-05-26 10:47:54 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:47:54 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:47:54 AM | Pas 4 | Raspuns final generat (181 caractere)
+agent.py | 2026-05-26 10:47:54 AM | Pas 4.1 | Istoric actualizat: 12 mesaje total
+agent.py | 2026-05-26 10:48:01 AM | Pas 2 | Mesaj primit: 'Cauta informatii despre LangChain'
+agent.py | 2026-05-26 10:48:01 AM | Pas 2.1 | Context construit: 14 mesaje
+agent.py | 2026-05-26 10:48:01 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:48:02 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:48:02 AM | Pas 4 | Raspuns final generat (416 caractere)
+agent.py | 2026-05-26 10:48:02 AM | Pas 4.1 | Istoric actualizat: 14 mesaje total
+agent.py | 2026-05-26 10:48:09 AM | Pas 2 | Mesaj primit: 'Cauta informatii despre LangChain'
+agent.py | 2026-05-26 10:48:09 AM | Pas 2.1 | Context construit: 16 mesaje
+agent.py | 2026-05-26 10:48:09 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:48:09 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:48:09 AM | Pas 4 | Raspuns final generat (543 caractere)
+agent.py | 2026-05-26 10:48:09 AM | Pas 4.1 | Istoric actualizat: 16 mesaje total
+agent.py | 2026-05-26 10:48:15 AM | Pas 2 | Mesaj primit: 'Gaseste ultimele stiri despre inteligenta artificiala'
+agent.py | 2026-05-26 10:48:15 AM | Pas 2.1 | Context construit: 18 mesaje
+agent.py | 2026-05-26 10:48:15 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:48:16 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:48:16 AM | Pas 4 | Raspuns final generat (604 caractere)
+agent.py | 2026-05-26 10:48:16 AM | Pas 4.1 | Istoric actualizat: 18 mesaje total
+agent.py | 2026-05-26 10:48:25 AM | Pas 2 | Mesaj primit: 'Cauta top 5 framework-uri Python pentru AI'
+agent.py | 2026-05-26 10:48:25 AM | Pas 2.1 | Context construit: 20 mesaje
+agent.py | 2026-05-26 10:48:25 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:48:25 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:48:25 AM | Pas 4 | Raspuns final generat (394 caractere)
+agent.py | 2026-05-26 10:48:25 AM | Pas 4.1 | Istoric actualizat: 20 mesaje total
+agent.py | 2026-05-26 10:48:44 AM | Pas 2 | Mesaj primit: 'Analizeaza: daca am 1200 RON venituri si 850 RON cheltuieli, cat economisesc lunar?'
+agent.py | 2026-05-26 10:48:44 AM | Pas 2.1 | Context construit: 22 mesaje
+agent.py | 2026-05-26 10:48:44 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:48:44 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:48:44 AM | Pas 4 | Raspuns final generat (191 caractere)
+agent.py | 2026-05-26 10:48:44 AM | Pas 4.1 | Istoric actualizat: 22 mesaje total
+agent.py | 2026-05-26 10:48:53 AM | Pas 2 | Mesaj primit: 'Analizeaza evolutia: acum 3 ani aveam 500 useri, acum am 2000. Care e cresterea procentuala?'
+agent.py | 2026-05-26 10:48:53 AM | Pas 2.1 | Context construit: 24 mesaje
+agent.py | 2026-05-26 10:48:53 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+agent.py | 2026-05-26 10:48:53 AM | Comutare | groq/llama-3.1-8b-instant -> openai/gpt-4o-mini (permanent pe sesiune)
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:48:54 AM | Pas 3 | Provider activ: openai/gpt-4o-mini
+agent.py | 2026-05-26 10:48:54 AM | Think | LLM solicita 1 tool call(s)
+agent.py | 2026-05-26 10:48:54 AM | Act | Execut tool: calculator({'expression': '((2000 - 500) / 500) * 100'})
+agent.py | 2026-05-26 10:48:54 AM | Observe | Rezultat calculator: 300.0
+agent.py | 2026-05-26 10:48:54 AM | Pas 3 | ReAct iteratie 2/10
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+agent.py | 2026-05-26 10:48:56 AM | Eroare | Provider openai/gpt-4o-mini a esuat: Error code: 400 - {'error': {'message': "An assistant message with 'tool_calls' must be followed by 
+agent.py | 2026-05-26 10:51:25 AM | Start | Pornire aplicatie QAAgent
+agent.py | 2026-05-26 10:51:25 AM | Pas 1 | Initializare agent QA
+agent.py | 2026-05-26 10:51:27 AM | Pas 1.1 | Provider inregistrat: gemini-2.5-flash
+agent.py | 2026-05-26 10:51:27 AM | Pas 1.1 | Provider inregistrat: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:51:27 AM | Pas 1.1 | Provider inregistrat: openai/gpt-4o-mini
+agent.py | 2026-05-26 10:51:27 AM | Pas 1.1 | Provider activ la start: gemini-2.5-flash
+agent.py | 2026-05-26 10:51:27 AM | Pas 1.2 | PromptRegistry incarcat: ['analyst', 'extract', 'planner', 'summary']
+agent.py | 2026-05-26 10:51:27 AM | Pas 1.3 | Tools inregistrate: ['calculator', 'get_datetime', 'web_search']
+agent.py | 2026-05-26 10:51:27 AM | Pas 1 | Agent initializat cu succes
+agent.py | 2026-05-26 10:51:33 AM | Pas 2 | Mesaj primit: 'Sumarizeaza in 3 puncte ce face un agent QA'
+agent.py | 2026-05-26 10:51:33 AM | Pas 2.1 | Context construit: 2 mesaje
+agent.py | 2026-05-26 10:51:33 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+agent.py | 2026-05-26 10:51:34 AM | Comutare | gemini-2.5-flash -> groq/llama-3.1-8b-instant (permanent pe sesiune)
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:51:34 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:51:34 AM | Pas 4 | Raspuns final generat (275 caractere)
+agent.py | 2026-05-26 10:51:34 AM | Pas 4.1 | Istoric actualizat: 2 mesaje total
+agent.py | 2026-05-26 10:51:40 AM | Pas 2 | Mesaj primit: 'Extrage datele din: 'Comanda #42, plasata pe 26-05-2026, valoare 1500 RON, client: Ion Popescu''
+agent.py | 2026-05-26 10:51:40 AM | Pas 2.1 | Context construit: 4 mesaje
+agent.py | 2026-05-26 10:51:40 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:51:41 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:51:41 AM | Pas 4 | Raspuns final generat (353 caractere)
+agent.py | 2026-05-26 10:51:41 AM | Pas 4.1 | Istoric actualizat: 4 mesaje total
+agent.py | 2026-05-26 10:51:48 AM | Pas 2 | Mesaj primit: 'Extrage si valideaza data din: 'Meeting pe 15/06/2026 la ora 14:30' — este in viitor?'
+agent.py | 2026-05-26 10:51:48 AM | Pas 2.1 | Context construit: 6 mesaje
+agent.py | 2026-05-26 10:51:48 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:51:49 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:51:49 AM | Pas 4 | Raspuns final generat (252 caractere)
+agent.py | 2026-05-26 10:51:49 AM | Pas 4.1 | Istoric actualizat: 6 mesaje total
+agent.py | 2026-05-26 10:52:04 AM | Pas 2 | Mesaj primit: 'Cat face 1847 * 394?'
+agent.py | 2026-05-26 10:52:04 AM | Pas 2.1 | Context construit: 8 mesaje
+agent.py | 2026-05-26 10:52:04 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:52:04 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:52:04 AM | Think | LLM solicita 1 tool call(s)
+agent.py | 2026-05-26 10:52:04 AM | Act | Execut tool: calculator({'expression': '1847 * 394'})
+agent.py | 2026-05-26 10:52:04 AM | Observe | Rezultat calculator: 727718
+agent.py | 2026-05-26 10:52:04 AM | Pas 3 | ReAct iteratie 2/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:52:05 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:52:05 AM | Pas 4 | Raspuns final generat (22 caractere)
+agent.py | 2026-05-26 10:52:05 AM | Pas 4.1 | Istoric actualizat: 8 mesaje total
+agent.py | 2026-05-26 10:52:09 AM | Pas 2 | Mesaj primit: 'Calculeaza (150 + 75) * 3 - 12 / 4'
+agent.py | 2026-05-26 10:52:09 AM | Pas 2.1 | Context construit: 10 mesaje
+agent.py | 2026-05-26 10:52:09 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:52:10 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:52:10 AM | Think | LLM solicita 1 tool call(s)
+agent.py | 2026-05-26 10:52:10 AM | Act | Execut tool: calculator({'expression': '(150 + 75) * 3 - 12 / 4'})
+agent.py | 2026-05-26 10:52:10 AM | Observe | Rezultat calculator: 672.0
+agent.py | 2026-05-26 10:52:10 AM | Pas 3 | ReAct iteratie 2/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:52:10 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:52:10 AM | Pas 4 | Raspuns final generat (19 caractere)
+agent.py | 2026-05-26 10:52:10 AM | Pas 4.1 | Istoric actualizat: 10 mesaje total
+agent.py | 2026-05-26 10:52:14 AM | Pas 2 | Mesaj primit: 'Care e radacina patrata din 144?'
+agent.py | 2026-05-26 10:52:14 AM | Pas 2.1 | Context construit: 12 mesaje
+agent.py | 2026-05-26 10:52:14 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:52:14 AM | Pas 3 | Provider activ: groq/llama-3.1-8b-instant
+agent.py | 2026-05-26 10:52:14 AM | Think | LLM solicita 1 tool call(s)
+agent.py | 2026-05-26 10:52:14 AM | Act | Execut tool: calculator({'expression': '144^(1/2)'})
+agent.py | 2026-05-26 10:52:14 AM | Observe | Rezultat calculator: Eroare la calcul: unsupported operand type(s) for ^: 'int' and 'float'
+agent.py | 2026-05-26 10:52:14 AM | Pas 3 | ReAct iteratie 2/10
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+agent.py | 2026-05-26 10:52:14 AM | Comutare | groq/llama-3.1-8b-instant -> openai/gpt-4o-mini (permanent pe sesiune)
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:52:15 AM | Pas 3 | Provider activ: openai/gpt-4o-mini
+agent.py | 2026-05-26 10:52:15 AM | Think | LLM solicita 1 tool call(s)
+agent.py | 2026-05-26 10:52:15 AM | Act | Execut tool: calculator({'expression': 'sqrt(144)'})
+agent.py | 2026-05-26 10:52:15 AM | Observe | Rezultat calculator: 12.0
+agent.py | 2026-05-26 10:52:15 AM | Pas 3 | ReAct iteratie 3/10
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:52:17 AM | Pas 3 | Provider activ: openai/gpt-4o-mini
+agent.py | 2026-05-26 10:52:17 AM | Pas 4 | Raspuns final generat (41 caractere)
+agent.py | 2026-05-26 10:52:17 AM | Pas 4.1 | Istoric actualizat: 12 mesaje total
+agent.py | 2026-05-26 10:52:22 AM | Pas 2 | Mesaj primit: 'Ce ora este acum?'
+agent.py | 2026-05-26 10:52:22 AM | Pas 2.1 | Context construit: 14 mesaje
+agent.py | 2026-05-26 10:52:22 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:52:23 AM | Pas 3 | Provider activ: openai/gpt-4o-mini
+agent.py | 2026-05-26 10:52:23 AM | Think | LLM solicita 1 tool call(s)
+agent.py | 2026-05-26 10:52:23 AM | Act | Execut tool: get_datetime({'format': '%H:%M:%S'})
+agent.py | 2026-05-26 10:52:23 AM | Observe | Rezultat get_datetime: 10:52:23
+agent.py | 2026-05-26 10:52:23 AM | Pas 3 | ReAct iteratie 2/10
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:52:25 AM | Pas 3 | Provider activ: openai/gpt-4o-mini
+agent.py | 2026-05-26 10:52:25 AM | Pas 4 | Raspuns final generat (34 caractere)
+agent.py | 2026-05-26 10:52:25 AM | Pas 4.1 | Istoric actualizat: 14 mesaje total
+agent.py | 2026-05-26 10:52:29 AM | Pas 2 | Mesaj primit: 'Da-mi data de azi in format DD/MM/YYYY'
+agent.py | 2026-05-26 10:52:29 AM | Pas 2.1 | Context construit: 16 mesaje
+agent.py | 2026-05-26 10:52:29 AM | Pas 3 | ReAct iteratie 1/10
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:52:30 AM | Pas 3 | Provider activ: openai/gpt-4o-mini
+agent.py | 2026-05-26 10:52:30 AM | Think | LLM solicita 1 tool call(s)
+agent.py | 2026-05-26 10:52:30 AM | Act | Execut tool: get_datetime({'format': '%d/%m/%Y'})
+agent.py | 2026-05-26 10:52:30 AM | Observe | Rezultat get_datetime: 26/05/2026
+agent.py | 2026-05-26 10:52:30 AM | Pas 3 | ReAct iteratie 2/10
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+agent.py | 2026-05-26 10:52:32 AM | Pas 3 | Provider activ: openai/gpt-4o-mini
+agent.py | 2026-05-26 10:52:32 AM | Pas 4 | Raspuns final generat (57 caractere)
+agent.py | 2026-05-26 10:52:32 AM | Pas 4.1 | Istoric actualizat: 16 mesaje total
